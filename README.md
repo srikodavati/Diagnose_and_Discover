@@ -1,13 +1,21 @@
 # DiagnoseAndDiscover
+
 CS567 Team 2 Final Project
-Type: Interface with System(A)
-Team Members: 
+
+**Type**: Interface with System(A)
+
+**Team Members**: 
+
 SriLekha Kodavati (sk121)
+
 Sindhu Vydana (svydana2)
+
 Ruthwik Pala (ruthwik2)
+
 Vishnu Deep Mandava(vm28)
 
 # Game Overview
+
 1.**Structure**: The game consists of 5 rounds with roles reversing each round.
 
 2. **Role**s: Each round features one player as the clue giver and the other as the guesser.
