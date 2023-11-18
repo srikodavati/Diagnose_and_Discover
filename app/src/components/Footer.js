@@ -5,7 +5,6 @@ function Footer() {
   return (
     <footer className="footer">
       <p>© 2023 Diagnose and Discover. All rights reserved.</p>
-      {/* You can add more content here like links or social media icons */}
     </footer>
   );
 }
