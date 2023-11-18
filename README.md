@@ -30,7 +30,11 @@ A correct first guess earns 5 points.
 
 6. **Second Clue**:
 If the first guess is incorrect, the clue giver offers a second clue.
+A correct guess after the second clue earns 3 points.
 
+7. **Discussion**:
+After each question, the answer and the source are revealed.
+Players can discuss about the question and strategize for the next rounds.
 
 
 # Running the game locally
@@ -39,12 +43,3 @@ If the first guess is incorrect, the clue giver offers a second clue.
 2) Run the following commands to install modules:
    - npm install react-scripts --save
    - npm install web-vitals
-
-
-
-
-A correct guess after the second clue earns 3 points.
-
-8. **Discussion**:
-After each question, the answer and the source are revealed.
-Players can discuss about the question and strategize for the next rounds.
