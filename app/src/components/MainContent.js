@@ -1,21 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GameContent from './GameContent';
 import leftRobotImage  from '../assets/Robot1.png';
 import rightRobotImage  from '../assets/Robot2.png';
 
 function MainComponent() {
-  const [gameCode, setGameCode] = useState('');
+  const [gameCode, setGameCode] =  useState(() => localStorage.getItem('gameCode') || '');
   const [playerName, setPlayerName] = useState('');
+  const [enteredGameCode, setEnteredGameCode] = useState('');
   const [gameStage, setGameStage] = useState('landing'); 
 
   const handleStartGame = () => {
-    const newGameCode = 'XYZ123'; // This should be dynamically generated
+    const newGameCode = 'abc'; // This should be dynamically generated
     setGameCode(newGameCode);
+    localStorage.setItem('gameCode', newGameCode); 
     setGameStage('start');
+    console.log('Game started, code set to:', newGameCode);
   };
 
+  useEffect(() => {
+    console.log('Component mounted. Retrieved gameCode:', gameCode);
+    localStorage.setItem('gameCode', gameCode);
+  }, [gameCode]);
+
+
   const handleJoinGame = () => {
-    setGameStage('join');
+    console.log("Attempt to join with code:", enteredGameCode, "Stored Code:", gameCode);
+    if (enteredGameCode === gameCode) {
+      setGameStage('intro');
+    } else {
+      alert("Type valid code");
+    }
   };
 
   const handleSubmit = () => {
@@ -25,7 +39,7 @@ function MainComponent() {
   const renderLanding = () => (
     <div>
       <button class="button"  onClick={handleStartGame}>Start a New Game</button>
-      <button  class="button" onClick={handleJoinGame}>Join a Game</button>
+      <button  class="button" onClick={() => setGameStage('join')}>Join a Game</button>
     </div>
   );
 
@@ -34,6 +48,7 @@ function MainComponent() {
       <p>Game Code: {gameCode}</p>
       <input
         type="text"
+        class = 'input'
         placeholder="Enter your name"
         value={playerName}
         onChange={(e) => setPlayerName(e.target.value)}
@@ -46,17 +61,19 @@ function MainComponent() {
     <div>
       <input
         type="text"
+        class = 'input'
         placeholder="Enter Game Code"
-        value={gameCode}
-        onChange={(e) => setGameCode(e.target.value)}
+        value={enteredGameCode}
+        onChange={(e) => setEnteredGameCode(e.target.value)}
       />
       <input
+        class = 'input'
         type="text"
         placeholder="Enter your name"
         value={playerName}
         onChange={(e) => setPlayerName(e.target.value)}
       />
-      <button  class="button" onClick={handleSubmit}>Join Game</button>
+      <button  class="button" onClick={handleJoinGame}>Join Game</button>
     </div>
   );
 

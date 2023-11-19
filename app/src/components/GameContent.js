@@ -7,7 +7,7 @@ import avatar2 from '../assets/avatar2.png';
 function GameContent() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(null);
   const [timer, setTimer] = useState(60);
-  const [score, setScore] = useState(0);
+   const [score, setScore] = useState(0);
   const [clue, setClue] = useState('');
   const [isTimerActive, setIsTimerActive] = useState(true);
 
