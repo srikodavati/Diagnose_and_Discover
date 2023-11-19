@@ -1,0 +1,28 @@
+[
+    {
+      "question": "GI Genius is an AI assisted _____ tool which is designed to detect polyps.",
+      "forbiddenWords": ["Colon", "Cancer", "Endoscopy", "Intestine", "Bowel"],
+      "answer": "colonoscopy"
+    },
+    {
+      "question": "The Eiffel Tower is a notable landmark in _____, France.",
+      "forbiddenWords": ["Paris", "Monument", "Metal", "Tower", "Tourist"],
+      "answer": "Paris"
+    },
+    {
+      "question": "_____ is a process of communication through the use of symbols or signs.",
+      "forbiddenWords": ["Language", "Words", "Speak", "Writing", "Gesture"],
+      "answer": "Language"
+    },
+    {
+      "question": "The Great Barrier Reef is the world's largest coral reef system located in the _____ Ocean.",
+      "forbiddenWords": ["Pacific", "Australia", "Marine", "Coral", "Ocean"],
+      "answer": "Coral Sea"
+    },
+    {
+      "question": "_____ is the study of the past as it is described in written documents.",
+      "forbiddenWords": ["History", "Past", "Study", "Documents", "Ancient"],
+      "answer": "History"
+    }
+  ]
+  
