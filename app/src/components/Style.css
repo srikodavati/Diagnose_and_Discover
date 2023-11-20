@@ -143,8 +143,36 @@ header img {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition-duration: 0.4s;
 }
+.button, .submit-guess {
+  background-color: #e0b90b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition-duration: 0.4s;
+}
+
+.clue-display, .previous-guesses-display {
+  background-color:#e0b90b;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto; 
+  width: 70%; 
+  box-sizing: border-box;
+}
 
 .button:hover, .next-question:hover {
+  background-color: #45a049;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3);
+}
+.button:hover, .submit-guess:hover {
   background-color: #45a049;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3);
 }
@@ -178,4 +206,3 @@ header img {
     margin-bottom: 10px;
   }
 }
-
