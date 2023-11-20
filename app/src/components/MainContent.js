@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GameContent from './GameContent';
+import GameContentGuess from './GameContentGuess';
 import leftRobotImage  from '../assets/Robot1.png';
 import rightRobotImage  from '../assets/Robot2.png';
 
@@ -156,7 +157,7 @@ function MainComponent() {
       {gameStage === 'introducton' && renderIntroductons()}
       {gameStage === 'instruction' && renderInstructions()}
       {gameStage === 'questions' && renderQuestions()}
-      {gameStage === 'play' &&<GameContent/>}
+      {gameStage === 'play' &&<GameContentGuess/>}
     </div>
     {renderrightImages()}
   </div>
