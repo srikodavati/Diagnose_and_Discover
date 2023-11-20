@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DiagnoseAndDiscover/static/css/main.73772bf6.css",
+    "main.js": "/DiagnoseAndDiscover/static/js/main.b2e08493.js",
+    "static/js/787.0f8d78ff.chunk.js": "/DiagnoseAndDiscover/static/js/787.0f8d78ff.chunk.js",
+    "static/media/avatar2.png": "/DiagnoseAndDiscover/static/media/avatar2.25ff3c1ab50364520110.png",
+    "static/media/avatar1.png": "/DiagnoseAndDiscover/static/media/avatar1.72824e5760f56c611861.png",
+    "static/media/Robot1.png": "/DiagnoseAndDiscover/static/media/Robot1.49c660943801bcc2eebe.png",
+    "static/media/Robot2.png": "/DiagnoseAndDiscover/static/media/Robot2.699b08cabad9e70ccf3d.png",
+    "static/media/game-title.png": "/DiagnoseAndDiscover/static/media/game-title.6c2b4e733685356de84b.png",
+    "index.html": "/DiagnoseAndDiscover/index.html",
+    "main.73772bf6.css.map": "/DiagnoseAndDiscover/static/css/main.73772bf6.css.map",
+    "main.b2e08493.js.map": "/DiagnoseAndDiscover/static/js/main.b2e08493.js.map",
+    "787.0f8d78ff.chunk.js.map": "/DiagnoseAndDiscover/static/js/787.0f8d78ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73772bf6.css",
+    "static/js/main.b2e08493.js"
+  ]
+}
