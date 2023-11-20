@@ -1,36 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import GameContent from './GameContent';
 import GameContentGuess from './GameContentGuess';
 import leftRobotImage  from '../assets/Robot1.png';
 import rightRobotImage  from '../assets/Robot2.png';
 
 function MainComponent() {
-  const [gameCode, setGameCode] =  useState(() => localStorage.getItem('gameCode') || '');
+  const [gameCode, setGameCode] =  useState('');
   const [playerName, setPlayerName] = useState('');
   const [enteredGameCode, setEnteredGameCode] = useState('');
   const [gameStage, setGameStage] = useState('landing'); 
 
   const handleStartGame = () => {
-    const newGameCode = 'abc'; // This should be dynamically generated
+    const newGameCode = 'abc'; 
     setGameCode(newGameCode);
-    localStorage.setItem('gameCode', newGameCode); 
     setGameStage('start');
-    console.log('Game started, code set to:', newGameCode);
+    
   };
 
-  useEffect(() => {
-    console.log('Component mounted. Retrieved gameCode:', gameCode);
-    localStorage.setItem('gameCode', gameCode);
-  }, [gameCode]);
-
-
   const handleJoinGame = () => {
-    console.log("Attempt to join with code:", enteredGameCode, "Stored Code:", gameCode);
-    if (enteredGameCode === gameCode) {
       setGameStage('intro');
-    } else {
-      alert("Type valid code");
-    }
   };
 
   const handleSubmit = () => {
